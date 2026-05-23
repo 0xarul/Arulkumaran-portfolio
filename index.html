@@ -4,153 +4,489 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arulkumaran V | Junior Penetration Tester</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0d1117;
+color:#e6edf3;
+line-height:1.7;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:#161b22;
+padding:15px 8%;
+z-index:1000;
+border-bottom:1px solid #30363d;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.3rem;
+font-weight:700;
+color:#58a6ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:#e6edf3;
+text-decoration:none;
+transition:.3s;
+}
+
+nav a:hover{
+color:#58a6ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+color:#58a6ff;
+}
+
+.hero h2{
+margin:10px 0;
+font-weight:400;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:#238636;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
+
+.btn:hover{
+background:#2ea043;
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:30px;
+color:#58a6ff;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:#161b22;
+padding:25px;
+border-radius:10px;
+border:1px solid #30363d;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#58a6ff;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#58a6ff;
+}
+
+.timeline{
+background:#161b22;
+padding:25px;
+border-radius:10px;
+border:1px solid #30363d;
+}
+
+.timeline ul{
+padding-left:20px;
+}
+
+footer{
+background:#161b22;
+text-align:center;
+padding:20px;
+border-top:1px solid #30363d;
+}
+
+.contact a{
+color:#58a6ff;
+text-decoration:none;
+}
+
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+border:none;
+background:#58a6ff;
+color:white;
+padding:12px 15px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.fade{
+opacity:0;
+transform:translateY(20px);
+transition:all .8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:2.4rem;
+}
+}
+</style>
 </head>
 
 <body>
 
+<header>
+<nav>
+<div class="logo">ARULKUMARAN V</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
 <h1>ARULKUMARAN V</h1>
-<h2>Junior Penetration Tester | VAPT Analyst</h2>
 
-<hr>
-
-<h2>About Me</h2>
+<h2 id="typing"></h2>
 
 <p>
-Junior Penetration Tester with hands-on experience in network, web application,
-API, and Active Directory security assessments. Skilled in reconnaissance,
-vulnerability assessment, exploitation, and post-exploitation using Nmap,
-Burp Suite, SQLMap, Metasploit, and Wireshark.
+Junior Penetration Tester with hands on experience in Network Security,
+Web Application Security, API Security Testing and Active Directory
+Assessments. Skilled in Nmap, Burp Suite, SQLMap, Metasploit,
+Wireshark, Nessus, OpenVAS and Python Automation.
 </p>
 
-<hr>
+<a class="btn" href="#contact">Contact Me</a>
 
-<h2>Technical Skills</h2>
+</div>
 
+</section>
+
+<section id="about" class="fade">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+Cybersecurity professional with practical experience in reconnaissance,
+vulnerability assessment, exploitation and post-exploitation across
+Linux, Windows and Active Directory environments.
+
+Passionate about offensive security, ethical hacking, penetration
+testing and security research. Experienced in identifying OWASP Top 10
+vulnerabilities, CVE analysis and reporting security findings.
+</p>
+
+</section>
+
+<section id="skills" class="fade">
+
+<h2 class="section-title">Core Skills</h2>
+
+<div class="grid">
+
+<div class="card">
 <h3>Penetration Testing</h3>
-<ul>
-<li>Network Security Testing</li>
-<li>Web Application Testing</li>
-<li>API Security Testing</li>
-<li>Active Directory Security Assessment</li>
-<li>PTES Methodology</li>
-</ul>
+<p>Web Testing, API Testing, Network Security Testing, Active Directory Assessment, IoT Security Testing, PTES</p>
+</div>
 
+<div class="card">
 <h3>Security Tools</h3>
-<ul>
-<li>Nmap</li>
-<li>Burp Suite</li>
-<li>OWASP ZAP</li>
-<li>SQLMap</li>
-<li>Metasploit</li>
-<li>Wireshark</li>
-<li>Nessus</li>
-<li>OpenVAS</li>
-<li>Nikto</li>
-</ul>
+<p>Nmap, Burp Suite, OWASP ZAP, SQLMap, Metasploit, Wireshark, Nikto, Nessus, OpenVAS</p>
+</div>
 
+<div class="card">
 <h3>Web Security</h3>
+<p>OWASP Top 10, SQL Injection, XSS, IDOR, Authentication Bypass, JWT Security</p>
+</div>
+
+<div class="card">
+<h3>Network Security</h3>
+<p>Port Scanning, SMB Enumeration, Service Enumeration, Kerberos Basics, Security Hardening</p>
+</div>
+
+<div class="card">
+<h3>Post Exploitation</h3>
+<p>Privilege Escalation, Credential Analysis, Persistence, Pivoting</p>
+</div>
+
+<div class="card">
+<h3>Programming</h3>
+<p>Python, Flask, Automation Scripting, Linux Administration</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience" class="fade">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<h3>Junior Penetration Tester — Hackup Technology</h3>
+<p><strong>Mar 2025 – Mar 2026</strong></p>
+
 <ul>
-<li>OWASP Top 10</li>
-<li>SQL Injection</li>
-<li>Cross-Site Scripting (XSS)</li>
-<li>IDOR</li>
-<li>Authentication Bypass</li>
-<li>JWT Security</li>
-</ul>
-
-<hr>
-
-<h2>Experience</h2>
-
-<h3>Junior Penetration Tester | Hackup Technology</h3>
-<p>March 2025 – March 2026</p>
-
-<ul>
-<li>Performed network reconnaissance and service enumeration using Nmap.</li>
-<li>Conducted web application and API security assessments.</li>
-<li>Assessed 15+ vulnerable machines and applications.</li>
-<li>Performed CVE analysis and CVSS-based risk prioritization.</li>
-<li>Executed controlled exploitation using Metasploit.</li>
+<li>Performed network reconnaissance, port scanning and service enumeration using Nmap.</li>
+<li>Conducted web application and API security assessments using Burp Suite and SQLMap.</li>
+<li>Assessed 15+ vulnerable machines and applications for OWASP Top 10 issues.</li>
+<li>Performed CVE analysis and CVSS-based prioritization.</li>
+<li>Executed controlled exploitation and post exploitation activities using Metasploit.</li>
 <li>Analyzed network traffic using Wireshark.</li>
-<li>Worked with Linux, Windows and Active Directory environments.</li>
+<li>Worked across Linux, Windows and Active Directory environments.</li>
 </ul>
 
-<hr>
+</div>
 
-<h2>Projects</h2>
+</section>
 
-<h3>Advanced Multi-Vector Cyberattack Simulation</h3>
+<section id="projects" class="fade">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Advanced Multi Vector Cyberattack Simulation</h3>
 <p>
-Simulated wireless deauthentication attacks, Evil Twin phishing,
-DNS spoofing, ARP poisoning, SSL stripping and ransomware behavior analysis.
+Simulated Evil Twin attacks, DNS spoofing, ARP poisoning,
+SSL stripping and ransomware behavior analysis using
+ESP8266, Bettercap and Infection Monkey.
 </p>
+</div>
 
+<div class="card">
 <h3>Automated Network & Web Security Assessment Framework</h3>
 <p>
-Built an automated framework integrating Nmap, service fingerprinting,
-vulnerability detection and report generation.
+Developed a framework integrating Nmap scanning,
+service fingerprinting, vulnerability detection
+and automated reporting.
 </p>
+</div>
 
+<div class="card">
 <h3>AI-Powered VAPT Assistant</h3>
 <p>
-Developed a Flask-based AI assistant integrating Nmap, Nikto,
-CVE/CVSS mapping and AI-assisted VAPT workflows.
+Built a Flask based AI assistant integrating
+Nmap, Nikto, CVE/CVSS mapping and AI-guided
+penetration testing workflows.
 </p>
+</div>
 
-<hr>
+</div>
 
-<h2>Certifications</h2>
+</section>
 
-<ul>
-<li>Vulnerability Assessment and Penetration Testing (VAPT)</li>
-<li>Ethical Hacking and Cybersecurity</li>
-<li>TryHackMe – Advent of Cyber</li>
-<li>Exploring Network Basics</li>
-<li>CPENT (In Progress)</li>
-</ul>
+<section class="fade">
 
-<hr>
+<h2 class="section-title">Certifications</h2>
 
-<h2>Achievements</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Completed</h3>
+<p>
+• Vulnerability Assessment & Penetration Testing (VAPT)<br>
+• Ethical Hacking & Cybersecurity<br>
+• TryHackMe – Advent of Cyber<br>
+• Exploring Network Basics
+</p>
+</div>
+
+<div class="card">
+<h3>In Progress</h3>
+<p>
+• EC-Council CPENT
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="section-title">Lab Environments</h2>
+
+<div class="grid">
+
+<div class="card">Kali Linux</div>
+<div class="card">Parrot Security OS</div>
+<div class="card">Windows Server 2022 AD Lab</div>
+<div class="card">DVWA</div>
+<div class="card">OWASP Juice Shop</div>
+<div class="card">Metasploitable2</div>
+<div class="card">VirtualBox</div>
+<div class="card">VMware</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="section-title">Achievements</h2>
 
 <ul>
 <li>First Prize – Best Idea, GVG Innovate Ideafest 2025</li>
 <li>Published National-Level Book Chapter on AI & Machine Learning</li>
-<li>Participant – National Cybersecurity Conclave 1.0, NIT Calicut</li>
-<li>Participant – KI CTF 2026</li>
+<li>National Cybersecurity Conclave 1.0 Participant – NIT Calicut</li>
+<li>KI CTF Participant</li>
 </ul>
 
-<hr>
+</section>
 
-<h2>Education</h2>
+<section id="contact" class="fade contact">
+
+<h2 class="section-title">Contact</h2>
 
 <p>
-Bachelor of Science (B.Sc.) in Digital and Cyber Forensic Science<br>
-Rathinam College of Arts and Science<br>
-2022 – 2025 | CGPA: 7.21
-</p>
-
-<hr>
-
-<h2>Contact</h2>
-
-<p>Email:
+📧 Email:
 <a href="mailto:arulkumaranvelayutham@gmail.com">
 arulkumaranvelayutham@gmail.com
 </a>
 </p>
 
-<p>LinkedIn:
+<br>
+
+<p>
+  LinkedIn:
 <a href="https://www.linkedin.com/in/arulkumaran-v-b6aa92265" target="_blank">
-www.linkedin.com/in/arulkumaran-v-b6aa92265
+linkedin.com/in/arulkumaran-v-b6aa92265
 </a>
 </p>
 
-<p>Location: Coimbatore, Tamil Nadu, India</p>
+<br>
 
-<hr>
+<p>
+  Coimbatore, Tamil Nadu, India
+</p>
 
-<p>© 2026 Arulkumaran V | Junior Penetration Tester</p>
+</section>
+
+<footer>
+<p>© 2026 Arulkumaran V | Junior Penetration Tester | VAPT Analyst</p>
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script>
+
+const text="Junior Penetration Tester | VAPT Analyst";
+let i=0;
+
+function typeWriter(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typeWriter,80);
+}
+}
+typeWriter();
+
+const reveals=document.querySelectorAll(".fade");
+
+window.addEventListener("scroll",()=>{
+reveals.forEach(section=>{
+const top=section.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+section.classList.add("show");
+}
+});
+});
+
+const btn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+if(document.documentElement.scrollTop>300){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+};
+
+btn.onclick=function(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+};
+
+</script>
 
 </body>
 </html>
